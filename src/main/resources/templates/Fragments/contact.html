@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleof.org">
+<th:block th:fragment="contact-section">
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-title-container"></div>
+            <div class="contact-container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">
+                    Have a project
+                </p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3 class="contact-heading">let's build something Amazing Together</h3>
+                    <p class="contact-text">
+                        I'm always open to discussing new projects, creative ideas or opportunities
+                    </p>
+                    <div class="contact-links"  >
+                        <a href="tel:+0413665442" class="contact-link">
+                            <div class="contact-link-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-link-text">
+                                <span class="contact-link-label">Phone</span>
+                                <span class="contact-link-label">+61 413665442</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="contact-links"  >
+                    <a href="nayakkrupa69@gmail.com" class="contact-link">
+                        <div class="contact-link-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-link-text">
+                            <span class="contact-link-label">Email</span>
+                            <span class="contact-link-value">nayakkrupa69@gmail.com
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="contact-links"  >
+                    <a href="linkedin.com/in/krupa-nayak-b61442342" target="_blank" class="contact-link">
+                        <div class="contact-link-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <div class="contact-link-text">
+                            <span class="contact-link-label">linkedIn</span>
+                            <span class="contact-link-label">Krupa Nayak</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+                <div class="contact-form">
+                    <form action="https://api.web3forms.com/submit" method="post">
+                        <input type="hidden" name="access_key" value="d465cf91-7cf4-4f4f-9b81-2f9bbf09153f">
+
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Krupa Nayak" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="abc@gmail.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" name="message" id="message" placeholder="Type your message here..." required></textarea>
+                        </div>
+
+                        <button class="btn btn-primary" type="submit">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+    </section>
+
+</th:block>
+</html>
