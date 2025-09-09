@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krupa Nayak - Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div th:replace="~{Fragments/loader :: loader}"></div>
+<div th:replace="~{Fragments/header :: site-header}"></div>
+<div th:replace="~{Fragments/hero :: hero-section}"></div>
+<div th:replace="~{Fragments/About :: about-section}"></div>
+<div th:replace="~{Fragments/projeccts :: project-section}"></div>
+<div th:replace="~{Fragments/experience :: experience-section}"></div>
+<div th:replace="~{Fragments/achievements :: achievements-section}"></div>
+<div th:replace="~{Fragments/contact :: contact-section}"></div>
+<div th:replace="~{Fragments/footer :: footer-section}"></div>
+
+<div class="floating-shape shape-1"></div>
+<div class="floating-shape shape-2"></div>
+<div class="floating-shape shape-3"></div>
+
+<script src="/js/script.js"></script>
+</body>
+</html>
