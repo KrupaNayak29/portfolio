@@ -5,17 +5,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class HomeController {
-
-    @GetMapping("/")
-    public String index() {
-        return "index"; // loads index.html with all fragments
+    @GetMapping({"","/","/home"})
+    public String showHomePage(){
+        return "home";
     }
 
-    @GetMapping("/redirect")
-    public String redirect() {
-        return "redirect"; // loads redirect.html which points to /
-    }
 }
-
 
 
